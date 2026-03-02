@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailosApp", "TailosApp\TailosApp.csproj", "{95C2E9D5-39F5-4A06-8773-0A99B99C13AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95C2E9D5-39F5-4A06-8773-0A99B99C13AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C2E9D5-39F5-4A06-8773-0A99B99C13AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C2E9D5-39F5-4A06-8773-0A99B99C13AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C2E9D5-39F5-4A06-8773-0A99B99C13AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5005C99B-8905-421F-B80E-B77F78D93B84}
+	EndGlobalSection
+EndGlobal
