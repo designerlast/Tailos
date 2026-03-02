@@ -1,0 +1,26 @@
+<Window x:Class="TemUiClone.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:uc="clr-namespace:TemUiClone.UserControls"
+        Title="Tailos – TEM Control"
+        Width="1400" Height="900"
+        MinWidth="1000" MinHeight="650"
+        WindowStartupLocation="CenterScreen"
+        Background="#FF252526">
+    <DockPanel>
+        <!-- Top toolbar (menu + icon bar) -->
+        <uc:TopToolbarControl DockPanel.Dock="Top"/>
+
+        <!-- Bottom status bar -->
+        <uc:StatusBarControl DockPanel.Dock="Bottom"/>
+
+        <!-- Left sidebar -->
+        <uc:LeftSidebarControl DockPanel.Dock="Left"/>
+
+        <!-- Right sidebar -->
+        <uc:RightSidebarControl DockPanel.Dock="Right"/>
+
+        <!-- Central TEM display – fills remaining space -->
+        <uc:CentralDisplayControl/>
+    </DockPanel>
+</Window>
