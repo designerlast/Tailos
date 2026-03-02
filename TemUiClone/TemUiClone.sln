@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution>
+  <Project Name="TemUiClone" ProjectType="WPF">
+    <ItemGroup>
+      <Compile Include="App.xaml.cs" />
+      <Compile Include="MainWindow.xaml.cs" />
+      <Compile Include="UserControl1.xaml.cs" />
+      <Compile Include="UserControl2.xaml.cs" />
+      <Compile Include="UserControl3.xaml.cs" />
+      <Compile Include="UserControl4.xaml.cs" />
+    </ItemGroup>
+  </Project>
+</Solution>
