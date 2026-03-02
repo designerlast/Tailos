@@ -1,0 +1,75 @@
+<UserControl x:Class="TemUiClone.UserControls.StatusBarControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="24"
+             Background="#FF1E1E1E">
+    <Border BorderBrush="#FF3F3F46" BorderThickness="0,1,0,0">
+        <DockPanel Margin="4,0">
+            <!-- Magnification -->
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" Margin="0,0,8,0">
+                <TextBlock Style="{StaticResource StatusLabelStyle}" Text="SA"/>
+                <TextBlock Style="{StaticResource StatusValueStyle}" Text="36000x"/>
+            </StackPanel>
+
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"
+                       Background="#FF3F3F46" Margin="0,2" DockPanel.Dock="Left"/>
+
+            <!-- Screen -->
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" Margin="8,0,8,0">
+                <TextBlock Style="{StaticResource StatusLabelStyle}" Text="Screen"/>
+                <Ellipse Width="8" Height="8" Fill="{StaticResource GreenIndicatorBrush}" Margin="2,0,4,0" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"
+                       Background="#FF3F3F46" Margin="0,2" DockPanel.Dock="Left"/>
+
+            <!-- Mode -->
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" Margin="8,0,8,0">
+                <TextBlock Style="{StaticResource StatusLabelStyle}" Text="Mode"/>
+                <TextBlock Style="{StaticResource StatusValueStyle}" Text="TEM Bright Field"/>
+            </StackPanel>
+
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"
+                       Background="#FF3F3F46" Margin="0,2" DockPanel.Dock="Left"/>
+
+            <!-- High Tension -->
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" Margin="8,0,8,0">
+                <TextBlock Style="{StaticResource StatusLabelStyle}" Text="High Tension"/>
+                <TextBlock Style="{StaticResource StatusValueStyle}" Text="200 kV"/>
+            </StackPanel>
+
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"
+                       Background="#FF3F3F46" Margin="0,2" DockPanel.Dock="Left"/>
+
+            <!-- Objective Lens -->
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" Margin="8,0,8,0">
+                <TextBlock Style="{StaticResource StatusLabelStyle}" Text="Obj Lens"/>
+                <TextBlock Style="{StaticResource StatusValueStyle}" Text="43210"/>
+            </StackPanel>
+
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"
+                       Background="#FF3F3F46" Margin="0,2" DockPanel.Dock="Left"/>
+
+            <!-- Stage X/Y -->
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" Margin="8,0,8,0">
+                <TextBlock Style="{StaticResource StatusLabelStyle}" Text="Stage"/>
+                <TextBlock Style="{StaticResource StatusValueStyle}" Text="X: 12.3  Y: -4.5  Z: 0.0 µm"/>
+            </StackPanel>
+
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"
+                       Background="#FF3F3F46" Margin="0,2" DockPanel.Dock="Left"/>
+
+            <!-- Defocus -->
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" Margin="8,0,8,0">
+                <TextBlock Style="{StaticResource StatusLabelStyle}" Text="Defocus"/>
+                <TextBlock Style="{StaticResource StatusValueStyle}" Text="-1200 nm"/>
+            </StackPanel>
+
+            <!-- Right-align: ready indicator -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Right" Margin="8,0">
+                <Ellipse Width="8" Height="8" Fill="{StaticResource GreenIndicatorBrush}" Margin="0,0,4,0" VerticalAlignment="Center"/>
+                <TextBlock Style="{StaticResource StatusValueStyle}" Text="Ready" Foreground="#FF00AA00" Margin="0"/>
+            </StackPanel>
+        </DockPanel>
+    </Border>
+</UserControl>

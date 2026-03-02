@@ -1,0 +1,164 @@
+<UserControl x:Class="TemUiClone.UserControls.LeftSidebarControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Width="190"
+             Background="#FF2D2D30">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Margin="2">
+
+            <!-- ═══ VACUUM ═══ -->
+            <GroupBox Header="Vacuum" Margin="2,2,2,2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Status"/>
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                        <Ellipse Width="10" Height="10" Fill="{StaticResource GreenIndicatorBrush}" Margin="2,0"/>
+                        <TextBlock Text="Ready" Foreground="#FF00AA00" FontSize="10" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Column"/>
+                    <TextBox   Grid.Row="1" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="3.2e-7 Pa"/>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Buffer"/>
+                    <TextBox   Grid.Row="2" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="1.4e-6 Pa"/>
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Roughing"/>
+                    <TextBox   Grid.Row="3" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="3.1 Pa"/>
+
+                    <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Gun"/>
+                    <TextBox   Grid.Row="4" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="1.2e-8 Pa"/>
+
+                    <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="IGP"/>
+                    <TextBox   Grid.Row="5" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="8.5e-9 Pa"/>
+                </Grid>
+            </GroupBox>
+
+            <!-- ═══ HIGH TENSION ═══ -->
+            <GroupBox Header="High Tension" Margin="2,2,2,2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Status"/>
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                        <Ellipse Width="10" Height="10" Fill="{StaticResource GreenIndicatorBrush}" Margin="2,0"/>
+                        <TextBlock Text="On" Foreground="#FF00AA00" FontSize="10" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Voltage"/>
+                    <TextBox   Grid.Row="1" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="200 kV"/>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Current"/>
+                    <TextBox   Grid.Row="2" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="114 µA"/>
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Emission"/>
+                    <TextBox   Grid.Row="3" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="113.6 µA"/>
+
+                    <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Suppressor"/>
+                    <TextBox   Grid.Row="4" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="-400 V"/>
+                </Grid>
+            </GroupBox>
+
+            <!-- ═══ FEG CONTROL ═══ -->
+            <GroupBox Header="FEG Control" Margin="2,2,2,2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="FEG State"/>
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                        <Ellipse Width="10" Height="10" Fill="{StaticResource GreenIndicatorBrush}" Margin="2,0"/>
+                        <TextBlock Text="Emitting" Foreground="#FF00AA00" FontSize="10" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Extractor V"/>
+                    <TextBox   Grid.Row="1" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="4500 V"/>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Gun Lens"/>
+                    <TextBox   Grid.Row="2" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="3"/>
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Spot Size"/>
+                    <TextBox   Grid.Row="3" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="3"/>
+
+                    <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="C1"/>
+                    <TextBox   Grid.Row="4" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="18456"/>
+
+                    <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="C2"/>
+                    <TextBox   Grid.Row="5" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="26712"/>
+
+                    <TextBlock Grid.Row="6" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="C3"/>
+                    <TextBox   Grid.Row="6" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="32048"/>
+                </Grid>
+            </GroupBox>
+
+            <!-- ═══ FEG REGISTERS ═══ -->
+            <GroupBox Header="FEG Registers" Margin="2,2,2,2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Reg1"/>
+                    <TextBox   Grid.Row="0" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="0x0A3F"/>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Reg2"/>
+                    <TextBox   Grid.Row="1" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="0x1C00"/>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Reg3"/>
+                    <TextBox   Grid.Row="2" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="0x0080"/>
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Reg4"/>
+                    <TextBox   Grid.Row="3" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="0x3FFF"/>
+
+                    <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Reg5"/>
+                    <TextBox   Grid.Row="4" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="0x0210"/>
+
+                    <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource FieldLabelStyle}" Text="Reg6"/>
+                    <TextBox   Grid.Row="5" Grid.Column="1" Style="{StaticResource ValueBoxStyle}" Text="0x4400"/>
+                </Grid>
+            </GroupBox>
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

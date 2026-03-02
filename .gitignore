@@ -1,0 +1,15 @@
+# Build artifacts
+**/bin/
+**/obj/
+
+# User-specific files
+*.user
+*.suo
+.vs/
+
+# NuGet packages
+**/packages/
+*.nupkg
+
+# macOS
+.DS_Store
